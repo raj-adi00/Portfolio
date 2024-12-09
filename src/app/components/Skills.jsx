@@ -1,4 +1,3 @@
-
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
@@ -16,8 +15,8 @@ import {
   SiAppwrite,
   SiSocketdotio,
   SiCloudinary,
+  SiVercel,
 } from "react-icons/si";
-import Rating from "./Rating";
 
 export default function Skills() {
   const skills = [
@@ -95,6 +94,15 @@ export default function Skills() {
         {
           name: "Socket.IO",
           icon: <SiSocketdotio size={40} className="text-blue-300" />,
+        },
+      ],
+    },
+    {
+      category: "Platform",
+      items: [
+        {
+          name: "Vercel",
+          icon: <SiVercel size={40} className="text-white" />,
         },
       ],
     },
