@@ -15,7 +15,7 @@ export default function Rating() {
       try {
         // Codeforces API
         const cfResponse = await axios.get(
-        //   "https://codeforces.com/api/user.info?handles=raj_adi"
+          "https://codeforces.com/api/user.info?handles=raj_adi"
         );
         const cfUser = cfResponse.data.result[0];
         const cfRating = cfUser.rating;

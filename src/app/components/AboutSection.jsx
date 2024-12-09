@@ -21,7 +21,7 @@ const AboutSection = () => {
             learning and delivering impactful results.
           </p>
           <div className="flex justify-center mt-4">
-            {/* <Rating /> */}
+            <Rating />
           </div>
         </div>
       </div>

@@ -7,57 +7,52 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Itube",
+    description:
+      "This is a full stack web application developed using MERN stack. It allows you to upload video and perform CRUD, add comments, count views. You can post tweets. User Watch history is monitored. There is a chatting feature using socket.io",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/raj-adi00/VideoStream-frontend",
+    previewUrl: "/https://itube-play.netlify.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "GameMaster",
+    description:
+      "This projectis built using React and Appwrite where i have implemented flipping cards game using CSS and there is a leaderboard for all the registered users. They are sorted on the basis of score which is awarded on the basis of number of moves to complete the game",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/raj-adi00/GameMaster",
+    previewUrl: "https://game-master-two.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "SignPic",
+    description:
+      "It is built using Javascript and canvas where you can sign and download it for official use. You can click pic of different size and download them.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/raj-adi00/sign-pic",
+    previewUrl: "https://sign-pic.vercel.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "PlaySphere",
     description: "Project 4 description",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: " Urja-25 website",
+    description:
+      "It is built using react for NIT jamshedpur annual fest. Major focus is on UI/UX. It has attractive interface and responsive designs",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "",
+    previewUrl: "https://www.sacnitjsr.org/",
   },
 ];
 
@@ -84,24 +79,8 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6"></div>
+      <ul ref={ref} className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 md:gap-12 flex-wrap">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
