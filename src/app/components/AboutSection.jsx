@@ -10,13 +10,13 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Hi, I'm Aditya—a tech enthusiast who thrives on solving complex
+            Hi, I&apos;m Aditya—a tech enthusiast who thrives on solving complex
             problems through competitive programming and DSA. With a solid
-            foundation in algorithms and data structures, I've honed my skills
-            in C++. Beyond problem-solving, I bring my expertise into full-stack
-            web development, working with JavaScript, React, Node.js, Express,
-            MongoDB, NextJs and Typescript to build responsive and dynamic
-            applications. Whether it’s optimizing algorithms or crafting
+            foundation in algorithms and data structures, I&apos;ve honed my
+            skills in C++. Beyond problem-solving, I bring my expertise into
+            full-stack web development, working with JavaScript, React, Node.js,
+            Express, MongoDB, NextJs and Typescript to build responsive and
+            dynamic applications. Whether its optimizing algorithms or crafting
             user-friendly web solutions, I am driven by a passion for continuous
             learning and delivering impactful results.
           </p>
