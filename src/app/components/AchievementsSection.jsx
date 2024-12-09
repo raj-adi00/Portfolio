@@ -1,68 +1,46 @@
 "use client";
-import React from "react";
-import dynamic from "next/dynamic";
-
-const AnimatedNumbers = dynamic(
-  () => {
-    return import("react-animated-numbers");
-  },
-  { ssr: false }
-);
-
-const achievementsList = [
-  {
-    metric: "Projects",
-    value: "100",
-    postfix: "+",
-  },
-  {
-    prefix: "~",
-    metric: "Users",
-    value: "100,000",
-  },
-  {
-    metric: "Awards",
-    value: "7",
-  },
-  {
-    metric: "Years",
-    value: "5",
-  },
-];
-
+import React, { useEffect, useState } from "react";
+import { FaTrophy } from "react-icons/fa";
+import { motion } from "framer-motion"; // For animations
 const AchievementsSection = () => {
+  const achievements = [
+    { title: "Global rank 345 in leetcode weekly contest-407" },
+    { title: "Global rank 832 in leetcode weekly contest-422" },
+    {title:" Global rak 2634 out of 22620 participants in Educational codeforces round 172"},
+    { title: "Rank 3 in CodeKarma organized by PCON, NIT Jamshedpur" },
+    { title: "Specialist @ Codeforces" },
+    { title: "Knight @ Leetcode" },
+  ];
+
+  // State to manage animation trigger
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // Trigger animation when the component mounts
+  useEffect(() => {
+    setHasAnimated(true);
+  }, []);
+
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
-        {achievementsList.map((achievement, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
-            >
-              <h2 className="text-white text-4xl font-bold flex flex-row">
-                {achievement.prefix}
-                <AnimatedNumbers
-                  includeComma
-                  animateToNumber={parseInt(achievement.value)}
-                  locale="en-US"
-                  className="text-white text-4xl font-bold"
-                  configs={(_, index) => {
-                    return {
-                      mass: 1,
-                      friction: 100,
-                      tensions: 140 * (index + 1),
-                    };
-                  }}
-                />
-                {achievement.postfix}
-              </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+    <motion.div
+      className="py-10 px-5 bg-[#18191E] text-white my-10"
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: hasAnimated ? 1 : 0, x: hasAnimated ? 0 : -100 }}
+      transition={{ duration: 1 }}
+    >
+      <h2 className="text-3xl font-semibold text-center mb-6">
+        <FaTrophy className="inline mr-2 text-yellow-500" />
+        Achievements
+      </h2>
+      <div className="space-y-4">
+        {achievements.map((achievement, index) => (
+          <div key={index} className="flex items-center space-x-3">
+            <div>
+              <h3 className="text-lg font-semibold">{achievement.title}</h3>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
