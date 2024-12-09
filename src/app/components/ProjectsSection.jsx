@@ -51,7 +51,7 @@ const projectsData = [
       "It is built using react for NIT jamshedpur annual fest. Major focus is on UI/UX. It has attractive interface and responsive designs",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "",
+    gitUrl: "https://github.com/shubham691438/Urja",
     previewUrl: "https://www.sacnitjsr.org/",
   },
 ];
