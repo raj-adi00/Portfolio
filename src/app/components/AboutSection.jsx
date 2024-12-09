@@ -20,9 +20,7 @@ const AboutSection = () => {
             user-friendly web solutions, I am driven by a passion for continuous
             learning and delivering impactful results.
           </p>
-          <div className="flex justify-center mt-4">
-            <Rating />
-          </div>
+          <div className="flex justify-center mt-4"></div>
         </div>
       </div>
     </section>
