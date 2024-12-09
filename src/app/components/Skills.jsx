@@ -16,6 +16,7 @@ import {
   SiSocketdotio,
   SiCloudinary,
   SiVercel,
+  SiNetlify,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -103,7 +104,10 @@ export default function Skills() {
         {
           name: "Vercel",
           icon: <SiVercel size={40} className="text-white" />,
-        },
+        },{
+            name:"Netlify",
+            icon: <SiNetlify size={40} className="text-gray-300"/>
+        }
       ],
     },
   ];
