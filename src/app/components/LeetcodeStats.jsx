@@ -34,7 +34,7 @@ const LeetCodeStats = () => {
     <div className="max-w-lg mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-md">
       {/* User ID */}
       <h1 className="text-lg font-bold text-purple-500 text-center mb-6">
-        raj-adi's LeetCode Stats
+        raj-adi &apos;s LeetCode Stats
       </h1>
 
       {/* Stats Section */}

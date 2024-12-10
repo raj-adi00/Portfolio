@@ -39,7 +39,7 @@ const CodeforcesCard = ({ username }) => {
   return (
     <div className="bg-gray-900 text-white p-6 rounded-md shadow-md max-w-lg text-sm">
       <h2 className="font-bold text-purple-500 text-lg mb-6">
-        {stats.handle}'s Codeforces Stats
+        {stats.handle} &apos;s Codeforces Stats
       </h2>
       <ul className="space-y-2 text-xs">
         <li>
