@@ -1,34 +1,29 @@
 "use client";
-import { SiCodeforces, SiLeetcode } from "react-icons/si";
+import { SiCodeforces, SiLeetcode, SiGithub } from "react-icons/si";
+import LeetCodeStats from "./LeetcodeStats";
+import CodeforcesCard from "./CodeforcesCard";
+import GithubCard from "./GithubCard";
 
 export default function Rating() {
-  const codeforcesCardUrl =
-    "https://coding-profile.vercel.app/api/codeforces?username=raj_adi&theme=dark";
-  const leetcodeCardUrl =
-    "https://coding-profile.vercel.app/api?username=raj-adi&theme=dark";
-
   return (
-    <div className="bg-[#121212] text-white py-5">
+    <div className="bg-[#030101] text-white py-5">
       <div className="flex flex-wrap gap-6 justify-center">
         {/* Codeforces Card */}
+
         <div className="flex flex-col items-center">
           <SiCodeforces size={30} className="text-[#d93d3d]" />
-          <img
-            src={codeforcesCardUrl}
-            alt="Codeforces Profile Card"
-            className="w-[400px] rounded-lg shadow-lg"
-          />
+          <CodeforcesCard username={"raj_adi"} />
         </div>
 
         {/* LeetCode Card */}
         <div className="flex flex-col items-center">
           <SiLeetcode size={30} className="text-[#FFA116]" />
-          <img
-            src={leetcodeCardUrl}
-            alt="LeetCode Profile Card"
-            className="w-[400px] rounded-lg shadow-lg"
-          />
+          <LeetCodeStats />
         </div>
+      </div>
+      <div className="flex flex-col items-center mt-10">
+        <SiGithub size={30} className="text-[#e5e3e0]" />
+        <GithubCard username={"raj-adi00"} />
       </div>
     </div>
   );

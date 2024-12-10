@@ -113,7 +113,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="bg-[#121212] text-white py-10">
+    <div className="bg-[#121212] text-white py-10 px-6">
       <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
       {skills.map((skillCategory, index) => (
         <div key={index} className="mb-10">
