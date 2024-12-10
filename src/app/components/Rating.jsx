@@ -25,6 +25,13 @@ export default function Rating() {
         <SiGithub size={30} className="text-[#e5e3e0]" />
         <GithubCard username={"raj-adi00"} />
       </div>
+      <div className="w-full p-6 bg-black">
+        <img
+          src="https://ghchart.rshah.org/raj-adi00"
+          alt="GitHub Contributions Graph"
+          className="mx-auto w-full"
+        />
+      </div>
     </div>
   );
 }

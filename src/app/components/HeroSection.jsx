@@ -22,7 +22,7 @@ const HeroSection = () => {
             Aditya Raj
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Crafting code, solving puzzles, and building the future – I’m a
+            Crafting code, solving puzzles, and building the future. I&apos;m a
             passionate developer shaping ideas into reality.
           </p>
           <div>
