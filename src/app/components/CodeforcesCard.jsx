@@ -23,7 +23,7 @@ const CodeforcesCard = ({ username }) => {
 
   if (error) {
     return (
-      <div className="bg-gray-900 text-white  p-6 rounded-md shadow-md">
+      <div className="bg-gray-900 text-white  p-6 rounded-md shadow-md sm:max-w-screen-sm">
         <h2 className="text-sm font-bold mb-4">Codeforces Stats</h2>
         <p>Could not fetch Codeforces data. Please try again later.</p>
         <p className="text-red-500">{errorMessage}</p>{" "}
@@ -37,7 +37,7 @@ const CodeforcesCard = ({ username }) => {
   }
 
   return (
-    <div className="bg-gray-900 text-white p-6 rounded-md shadow-md max-w-lg text-sm">
+    <div className="bg-gray-900 text-white p-6 rounded-md shadow-md max-w-lg text-sm sm:max-w-[680px]">
       <h2 className="font-bold text-purple-500 text-lg mb-6">
         {stats.handle} &apos;s Codeforces Stats
       </h2>

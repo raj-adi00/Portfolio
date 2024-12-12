@@ -12,7 +12,7 @@ const navLinks = [
   { title: "CV", path: "/cv", subMenu: [] },
 ];
 
-export const  Navbar = () => {
+export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [hovered, setHovered] = useState(false); // Track hover state for "Home"
 
@@ -78,7 +78,7 @@ export const  Navbar = () => {
 
       {/* Mobile Menu */}
       {navbarOpen && (
-        <div className="md:hidden bg-[#121212] bg-opacity-90 absolute top-0 left-0 right-0 z-20">
+        <div className="md:hidden bg-black absolute top-0 left-0 right-0 z-20">
           <button
             onClick={() => setNavbarOpen(false)}
             className="absolute top-4 right-4 text-white"
@@ -95,24 +95,6 @@ export const  Navbar = () => {
                 >
                   {link.title}
                 </Link>
-                {/* Show submenu for "Home" */}
-                {link.title === "Home" && (
-                  <div className="bg-[#121212] text-white p-2 rounded-md shadow-lg mt-2">
-                    <ul className="space-y-2">
-                      {link.subMenu.map((subItem, subIndex) => (
-                        <li key={subIndex}>
-                          <Link
-                            href={`#${subItem.toLowerCase()}`}
-                            className="block hover:text-[#FF6347] transition duration-300"
-                            onClick={() => setNavbarOpen(false)}
-                          >
-                            {subItem}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </li>
             ))}
           </ul>
@@ -121,5 +103,3 @@ export const  Navbar = () => {
     </nav>
   );
 };
-
-

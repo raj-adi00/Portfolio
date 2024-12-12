@@ -13,7 +13,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/raj-adi00/VideoStream-frontend",
-    previewUrl: "/https://itube-play.netlify.app/",
+    previewUrl: "https://itube-play.netlify.app/",
   },
   {
     id: 2,
