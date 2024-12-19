@@ -10,6 +10,7 @@ const AchievementsSection = () => {
     { title: "Rank 3 in CodeKarma organized by PCON, NIT Jamshedpur" },
     { title: "Specialist @ Codeforces" },
     { title: "Knight @ Leetcode" },
+    {title:  "TCS CodeVita Round 2 Qualifier (Global Coding Competition)"}
   ];
 
   // State to manage animation trigger
