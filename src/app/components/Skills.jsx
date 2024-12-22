@@ -17,6 +17,7 @@ import {
   SiCloudinary,
   SiVercel,
   SiNetlify,
+  SiDocker,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -94,7 +95,11 @@ export default function Skills() {
         },
         {
           name: "Socket.IO",
-          icon: <SiSocketdotio size={40} className="text-blue-300" />,
+          icon: <SiSocketdotio size={40} className="text-white" />,
+        },
+        {
+          name: "Docker",
+          icon: <SiDocker size={40} className="text-blue-300" />,
         },
       ],
     },
@@ -104,10 +109,11 @@ export default function Skills() {
         {
           name: "Vercel",
           icon: <SiVercel size={40} className="text-white" />,
-        },{
-            name:"Netlify",
-            icon: <SiNetlify size={40} className="text-gray-300"/>
-        }
+        },
+        {
+          name: "Netlify",
+          icon: <SiNetlify size={40} className="text-gray-300" />,
+        },
       ],
     },
   ];
