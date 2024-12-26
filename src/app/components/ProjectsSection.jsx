@@ -41,7 +41,7 @@ const projectsData = [
     description: "Project 4 description",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/raj-adi00/PlaySphere",
     previewUrl: "/",
   },
   {
