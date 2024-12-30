@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
@@ -38,11 +37,12 @@ const projectsData = [
   {
     id: 4,
     title: "PlaySphere",
-    description: "Project 4 description",
+    description:
+      "It is built using NextJs and TypeScript. Prisma and MongoDb is used. Payment Option Using Paypal Api and Integrate Google Oauth using NextAuth. Chatting feature using ReplicaAI api.",
     image: "/images/projects/4.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/raj-adi00/PlaySphere",
-    previewUrl: "/",
+    previewUrl: "https://play-sphere-pi.vercel.app/",
   },
   {
     id: 5,
@@ -80,7 +80,10 @@ const ProjectsSection = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6"></div>
-      <ul ref={ref} className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 md:gap-12 flex-wrap">
+      <ul
+        ref={ref}
+        className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 md:gap-12 flex-wrap"
+      >
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

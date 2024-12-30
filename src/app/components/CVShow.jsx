@@ -7,7 +7,7 @@ export default function CVShow() {
       <div className="min-h-screen bg-[#121212] text-white flex flex-col items-center justify-center p-2">
         {/* Download CV Button */}
         <Link
-          href="https://drive.google.com/uc?export=download&id=1bMAERNSmK_U8tiWC3K_tOFAymPjOOaEp"
+          href="https://docs.google.com/document/d/1UTpQ2YiEWgqOhHiB-wJbN7bUiIs4NlWe/export?format=pdf"
           className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
           target="_blank"
           rel="noopener noreferrer"

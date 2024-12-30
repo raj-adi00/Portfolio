@@ -18,6 +18,7 @@ import {
   SiVercel,
   SiNetlify,
   SiDocker,
+  SiPrisma,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -100,6 +101,10 @@ export default function Skills() {
         {
           name: "Docker",
           icon: <SiDocker size={40} className="text-blue-300" />,
+        },
+        {
+          name: "Prisma",
+          icon: <SiPrisma size={40} className="text-gray-600" />,
         },
       ],
     },
