@@ -54,6 +54,15 @@ const projectsData = [
     gitUrl: "https://github.com/shubham691438/Urja",
     previewUrl: "https://www.sacnitjsr.org/",
   },
+  {
+    id: 6,
+    title:"CodeFod",
+    description:"AI Based collaborative Code Editor. It is built using NextJs, Express and Node js. AI based code genearation.",
+    image:"/images/projects/6.png",
+    tag:["All","Web"],
+    gitUrl:"https://github.com/HiiiiiPritam/ai-code-editor",
+    previewUrl:"https://ai-code-editor-seven.vercel.app/"
+  }
 ];
 
 const ProjectsSection = () => {
