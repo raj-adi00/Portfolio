@@ -9,7 +9,7 @@ const navLinks = [
   { title: "Home", path: "/", subMenu: ["About", "Projects", "Contact"] },
   { title: "Coding Stats", path: "/stats", subMenu: [] },
   { title: "Projects", path: "/projects", subMenu: [] },
-  { title: "CV", path: "/cv", subMenu: [] },
+  { title: "Experience", path: "/experience", subMenu: [] },
 ];
 
 export const Navbar = () => {
