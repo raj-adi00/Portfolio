@@ -54,7 +54,7 @@ const ExperienceList = () => {
   return (
     <div>
       <h2 className="text-center font-bold text-3xl pt-5">My Experience</h2>
-      <div className="flex flex-col items-center gap-6 p-6 bg-black min-h-screen">
+      <div className="flex flex-col items-center gap-6 p-6 bg-[#121212] min-h-screen">
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />
         ))}
