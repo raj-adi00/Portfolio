@@ -6,36 +6,16 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Itube",
+    title: "Code-Fode",
     description:
-      "This is a full stack web application developed using MERN stack. It allows you to upload video and perform CRUD, add comments, count views. You can post tweets. User Watch history is monitored. There is a chatting feature using socket.io",
-    image: "/images/projects/1.png",
+      "AI Based collaborative Code Editor. It is built using NextJs, Express and Node js. AI based code genearation.",
+    image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/raj-adi00/VideoStream-frontend",
-    previewUrl: "https://itube-play.netlify.app/",
+    gitUrl: "https://github.com/raj-adi00/ai-code-editor",
+    previewUrl: "https://ai-code-editor-seven.vercel.app/",
   },
   {
     id: 2,
-    title: "GameMaster",
-    description:
-      "This projectis built using React and Appwrite where i have implemented flipping cards game using CSS and there is a leaderboard for all the registered users. They are sorted on the basis of score which is awarded on the basis of number of moves to complete the game",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/raj-adi00/GameMaster",
-    previewUrl: "https://game-master-two.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "SignPic",
-    description:
-      "It is built using Javascript and canvas where you can sign and download it for official use. You can click pic of different size and download them.",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/raj-adi00/sign-pic",
-    previewUrl: "https://sign-pic.vercel.app/",
-  },
-  {
-    id: 4,
     title: "PlaySphere",
     description:
       "It is built using NextJs and TypeScript. Prisma and MongoDb is used. Payment Option Using Paypal Api and Integrate Google Oauth using NextAuth. Chatting feature using ReplicaAI api.",
@@ -45,24 +25,15 @@ const projectsData = [
     previewUrl: "https://play-sphere-pi.vercel.app/",
   },
   {
-    id: 5,
-    title: " Urja-25 website",
+    id: 3,
+    title: "Itube",
     description:
-      "It is built using react for NIT jamshedpur annual fest. Major focus is on UI/UX. It has attractive interface and responsive designs",
-    image: "/images/projects/5.png",
+      "This is a full stack web application developed using MERN stack. It allows you to upload video and perform CRUD, add comments, count views. You can post tweets. User Watch history is monitored. There is a chatting feature using socket.io",
+    image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/shubham691438/Urja",
-    previewUrl: "https://www.sacnitjsr.org/",
+    gitUrl: "https://github.com/raj-adi00/VideoStream-frontend",
+    previewUrl: "https://itube-play.netlify.app/",
   },
-  {
-    id: 6,
-    title:"CodeFod",
-    description:"AI Based collaborative Code Editor. It is built using NextJs, Express and Node js. AI based code genearation.",
-    image:"/images/projects/6.png",
-    tag:["All","Web"],
-    gitUrl:"https://github.com/HiiiiiPritam/ai-code-editor",
-    previewUrl:"https://ai-code-editor-seven.vercel.app/"
-  }
 ];
 
 const ProjectsSection = () => {

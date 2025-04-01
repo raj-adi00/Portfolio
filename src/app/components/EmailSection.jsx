@@ -24,12 +24,12 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/raj-adi00">
+          <Link href="https://github.com/raj-adi00" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://linkedin.com/in/aditya-raj-338a8527a">
+          {/* <Link href="https://linkedin.com/in/aditya-raj-338a8527a">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-2 items-center my-2">
           <CgMail size={30} />: adi.adityakohli2005@gmail.com
@@ -39,15 +39,16 @@ const EmailSection = () => {
         <Link
           href={`https://codeforces.com/profile/raj_adi`}
           className="flex gap-4 my-2"
+          target="_blank"
         >
           <SiCodeforces size={20} />
           raj_adi
         </Link>
-        <Link href={`https://leetcode.com/u/raj-adi/`} className="flex gap-4 my-2">
+        <Link href={`https://leetcode.com/u/raj-adi/`} className="flex gap-4 my-2" target="_blank">
           <SiLeetcode size={20} />
           raj-adi
         </Link>
-        <Link href={`https://www.codechef.com/users/raj_adi00`} className="flex gap-4 my-2">
+        <Link href={`https://www.codechef.com/users/raj_adi00`} className="flex gap-4 my-2" target="_blank">
           <SiCodechef size={20} />
           raj_adi00
         </Link>
