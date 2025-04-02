@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { Navbar } from "../components/Navbar";
 
 const ExperienceCard = ({ title, duration, role }) => {
   return (
@@ -52,9 +53,10 @@ const ExperienceList = () => {
   ];
 
   return (
-    <div>
-      <h2 className="text-center font-bold text-3xl pt-5">My Experience</h2>
-      <div className="flex flex-col items-center gap-6 p-6 bg-[#121212] min-h-screen">
+    <div className="bg-[#121212] max-h-[90vh] overflow-auto">
+        <Navbar/>
+      <h2 className="text-center font-bold text-3xl pt-24">My Experience</h2>
+      <div className="flex flex-col items-center gap-6 p-6  min-h-screen">
         {experiences.map((exp, index) => (
           <ExperienceCard key={index} {...exp} />
         ))}
