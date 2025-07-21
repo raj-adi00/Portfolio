@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 // Define the main sections and sub-menu items
 const navLinks = [
-  { title: "Home", path: "/", subMenu: ["About", "Projects", "Contact"] },
+  { title: "Home", path: "/", subMenu: [] },
   { title: "Coding Stats", path: "/stats", subMenu: [] },
   { title: "Projects", path: "/projects", subMenu: [] },
   { title: "Experience", path: "/experience", subMenu: [] },
@@ -35,7 +35,7 @@ export const Navbar = () => {
 
         {/* Logo or Brand Name */}
         <Link href="/" className="text-white text-2xl font-semibold">
-          My Portfolio
+          Aditya Raj
         </Link>
 
         {/* Desktop Navigation */}

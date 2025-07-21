@@ -41,7 +41,7 @@ const CodeforcesCard = ({ username }) => {
       <h2 className="font-bold text-purple-500 text-lg mb-6">
         {stats.handle} &apos;s Codeforces Stats
       </h2>
-      <ul className="space-y-2 text-xs">
+      <ul className="space-y-2 text-lg">
         <li>
           <p className="text-green-500">
             <strong className="text-green-200">Rank:</strong> {stats.rank}{" "}

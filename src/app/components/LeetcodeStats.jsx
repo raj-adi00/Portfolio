@@ -38,7 +38,7 @@ const LeetCodeStats = () => {
       </h1>
 
       {/* Stats Section */}
-      <ul className="space-y-2 text-xs">
+      <ul className="space-y-2 text-lg">
         <li>
           <strong className="text-green-200">Ranking:</strong> <span className="text-green-200">{stats.ranking}</span>
         </li>

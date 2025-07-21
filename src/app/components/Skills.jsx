@@ -19,6 +19,7 @@ import {
   SiNetlify,
   SiDocker,
   SiPrisma,
+  SiStrapi
 } from "react-icons/si";
 
 export default function Skills() {
@@ -67,6 +68,10 @@ export default function Skills() {
           name: "Redux",
           icon: <DiReact size={40} className="text-purple-500" />,
         },
+        {
+          name: "Strapi",
+          icon: <SiStrapi size={40} className="text-gray-200" />,
+        }
       ],
     },
     {

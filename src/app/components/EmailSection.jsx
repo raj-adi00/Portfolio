@@ -23,16 +23,20 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/raj-adi00" target="_blank">
-            <Image src={GithubIcon} alt="Github Icon" />
+        <div className="socials flex flex-col gap-2">
+          <Link
+            href="https://github.com/raj-adi00"
+            target="_blank"
+            className="flex gap-2 items-center"
+          >
+            <Image src={GithubIcon} alt="Github Icon" /> : raj-adi00
           </Link>
-          {/* <Link href="https://linkedin.com/in/aditya-raj-338a8527a">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link> */}
+          <Link href="https://www.linkedin.com/in/aditya-raj-968a751ba" target="_blank" className="flex gap-2 items-center">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" /> : Aditya Raj
+          </Link>
         </div>
         <div className="flex gap-2 items-center my-2">
-          <CgMail size={30} />: adi.adityakohli2005@gmail.com
+          <CgMail size={50} />: adi.adityakohli2005@gmail.com
         </div>
       </div>
       <div>
@@ -44,11 +48,19 @@ const EmailSection = () => {
           <SiCodeforces size={20} />
           raj_adi
         </Link>
-        <Link href={`https://leetcode.com/u/raj-adi/`} className="flex gap-4 my-2" target="_blank">
+        <Link
+          href={`https://leetcode.com/u/raj-adi/`}
+          className="flex gap-4 my-2"
+          target="_blank"
+        >
           <SiLeetcode size={20} />
           raj-adi
         </Link>
-        <Link href={`https://www.codechef.com/users/raj_adi00`} className="flex gap-4 my-2" target="_blank">
+        <Link
+          href={`https://www.codechef.com/users/raj_adi00`}
+          className="flex gap-4 my-2"
+          target="_blank"
+        >
           <SiCodechef size={20} />
           raj_adi00
         </Link>
