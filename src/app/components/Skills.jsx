@@ -5,6 +5,7 @@ import {
   DiNodejs,
   DiMongodb,
   DiGit,
+  DiPython
 } from "react-icons/di";
 import {
   SiNextdotjs,
@@ -39,6 +40,10 @@ export default function Skills() {
           name: "TypeScript",
           icon: <SiTypescript size={40} className="text-blue-400" />,
         },
+        {
+          name: "Python",
+          icon: <DiPython size={40} className="text-blue-400" />,
+        }
       ],
     },
     {

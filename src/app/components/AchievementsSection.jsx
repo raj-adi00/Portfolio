@@ -4,6 +4,7 @@ import { FaTrophy } from "react-icons/fa";
 import { motion } from "framer-motion"; // For animations
 const AchievementsSection = () => {
   const achievements = [
+    { title: "Global rank 186 in Meta Hacker Cup Round 3" },
     { title: "Global rank 345 in leetcode weekly contest-407" },
     { title: "Global rank 832 in leetcode weekly contest-422" },
     {

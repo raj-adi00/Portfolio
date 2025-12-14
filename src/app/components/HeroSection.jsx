@@ -33,7 +33,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1UIE0wwUsqzLk6OGaD_5HArccoCb5-QNc/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Um_6V9eqotSWs9Dl1kRuRnqMRzEPtDxz/view?usp=sharing"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               target="_blank"
               rel="noopener noreferrer"

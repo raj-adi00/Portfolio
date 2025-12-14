@@ -42,12 +42,6 @@ const ExperienceList = () => {
       ],
     },
     {
-      title: "Problem Setter",
-      organization: "Coding Pandas",
-      duration: "July 2025 - Present",
-      role: ["Creating DSA questions for the platform", "Generating test case"],
-    },
-    {
       title: "Member - Competitive Programming",
       organization: "PCON, NIT Jamshedpur",
       duration: "April 2025 - Present",
