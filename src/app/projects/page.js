@@ -1,17 +1,20 @@
-import {Navbar} from "../components/Navbar";
+import { Navbar } from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home() {
   return (
-    <>
-      <body className="flex min-h-screen flex-col bg-[#121212]">
-        <nav>
-          <Navbar />
-        </nav>
-        <div className="container mt-24 mx-auto px-12 py-4">
+    <main className="min-h-screen bg-[#121212] text-white">
+      
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Content */}
+      <section className="pt-24 pb-10 px-4">
+        <div className="max-w-6xl mx-auto">
           <ProjectsSection />
         </div>
-      </body>
-    </>
+      </section>
+
+    </main>
   );
 }

@@ -5,7 +5,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
-    id: 1,
+    id:1,
+    title:"PeerShare",
+    description: "A high-performance P2P file sharing system built in C++ using custom TCP/UDP protocols. Supports LAN peer discovery, secure encrypted transfers, chunk-based sharing with resume support, and SHA-256 integrity verification for reliable and fault-tolerant file exchange.",
+    tag: ["All", "Systems", "Networking"],
+    image:"/images/projects/2.png",
+    gitUrl:"https://github.com/raj-adi00/File-Sharing",
+    previewUrl:"https://github.com/raj-adi00/File-Sharing"
+  },
+  {
+    id: 2,
     title: "Code-Fode",
     description:
       "AI Based collaborative Code Editor. It is built using NextJs, Express and Node js. AI based code genearation.",
@@ -14,16 +23,16 @@ const projectsData = [
     gitUrl: "https://github.com/raj-adi00/ai-code-editor",
     previewUrl: "https://ai-code-editor-seven.vercel.app/",
   },
-  {
-    id: 2,
-    title: "PlaySphere",
-    description:
-      "It is built using NextJs and TypeScript. Prisma and MongoDb is used. Payment Option Using Paypal Api and Integrate Google Oauth using NextAuth. Chatting feature using ReplicaAI api.",
-    image: "/images/projects/4.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/raj-adi00/PlaySphere",
-    previewUrl: "https://play-sphere-pi.vercel.app/",
-  },
+  // {
+  //   id: 2,
+  //   title: "PlaySphere",
+  //   description:
+  //     "It is built using NextJs and TypeScript. Prisma and MongoDb is used. Payment Option Using Paypal Api and Integrate Google Oauth using NextAuth. Chatting feature using ReplicaAI api.",
+  //   image: "/images/projects/4.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "https://github.com/raj-adi00/PlaySphere",
+  //   previewUrl: "https://play-sphere-pi.vercel.app/",
+  // },
   {
     id: 3,
     title: "Itube",
@@ -79,6 +88,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              tags={project.tag}
             />
           </motion.li>
         ))}

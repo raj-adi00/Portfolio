@@ -1,53 +1,61 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaTrophy } from "react-icons/fa";
-import { motion } from "framer-motion"; // For animations
+import { motion } from "framer-motion";
+
 const AchievementsSection = () => {
   const achievements = [
-    { title: "Global rank 186 in Meta Hacker Cup Round 3" },
-    { title: "Global rank 345 in leetcode weekly contest-407" },
-    { title: "Global rank 832 in leetcode weekly contest-422" },
-    {
-      title:
-        " Global rank 1584 out of 25000 participants in CodeForces round 1019(Div. 2)",
-    },
-    { title: "Rank 3 in CodeKarma organized by PCON, NIT Jamshedpur" },
-    { title: "Team Rank 1 in CodeMania OJASS-2025" },
-    { title: "Rank 3 at IIT BHU Codefest-2025 Haxplore Hackathon" },
-    { title: "Futureforce Tech Accelerator-2025" },
-    { title: "Specialist @ Codeforces" },
-    { title: "Knight @ Leetcode" },
+    "Global Rank 186 • Meta Hacker Cup Round 3",
+    "Global Rank 345 • LeetCode Weekly 407",
+    "Global Rank 832 • LeetCode Weekly 422",
+    "Global Rank 1584/25K • Codeforces Round 1019",
+    "Global Rank 844/17K • Codeforces Round 1082",
+    "Rank 3 • CodeKarma (PCON NIT JSR)",
+    "Team Rank 1 • CodeMania OJASS’25",
+    "Rank 3 • IIT BHU Codefest Haxplore",
+    "Futureforce Tech Accelerator 2025",
+    "Specialist • Codeforces",
+    "Knight • LeetCode",
   ];
 
-  // State to manage animation trigger
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  // Trigger animation when the component mounts
-  useEffect(() => {
-    setHasAnimated(true);
-  }, []);
-
   return (
-    <motion.div
-      className="py-10 px-5 bg-[#18191E] text-white my-10"
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: hasAnimated ? 1 : 0, x: hasAnimated ? 0 : -100 }}
-      transition={{ duration: 1 }}
-    >
-      <h2 className="text-3xl font-semibold text-center mb-6">
-        <FaTrophy className="inline mr-2 text-yellow-500" />
+    <section className="py-12 px-4 bg-[#18191E] text-white my-10">
+      {/* Heading */}
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-2xl font-semibold text-center mb-10 flex items-center justify-center gap-2"
+      >
+        <FaTrophy className="text-yellow-500 text-xl" />
         Achievements
-      </h2>
-      <div className="space-y-4">
-        {achievements.map((achievement, index) => (
-          <div key={index} className="flex items-center space-x-3">
-            <div>
-              <h3 className="text-lg font-semibold">{achievement.title}</h3>
+      </motion.h2>
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {achievements.map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.05 }}
+            className="group p-[1px] rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 hover:from-purple-500 hover:to-pink-500 transition-all duration-300"
+          >
+            {/* Card */}
+            <div className="bg-[#1f1f1f] rounded-xl p-4 h-full flex items-center gap-3 transition-all duration-300 group-hover:bg-[#222]">
+              
+              {/* Icon */}
+              <FaTrophy className="text-yellow-500 text-sm shrink-0" />
+
+              {/* Text */}
+              <p className="text-sm text-[#ADB7BE] group-hover:text-white leading-snug">
+                {item}
+              </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </motion.div>
+    </section>
   );
 };
 
