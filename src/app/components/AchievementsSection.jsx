@@ -14,7 +14,7 @@ const AchievementsSection = () => {
     "Team Rank 1 • CodeMania OJASS’25",
     "Rank 3 • IIT BHU Codefest Haxplore",
     "Futureforce Tech Accelerator 2025",
-    "Specialist • Codeforces",
+    "Expert • Codeforces",
     "Knight • LeetCode",
   ];
 
